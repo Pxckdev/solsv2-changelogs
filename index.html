@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOLS Changelogs</title>
+  <meta name="description" content="Stories of Los Santos server updates and changelogs.">
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="topbar-logo" href="#top"><img src="logo.png" alt="Sols"></a>
+    <nav class="topbar-nav">
+      <a class="btn btn-small btn-primary nav-keep" href="#updates">Latest update</a>
+    </nav>
+  </header>
+
+  <main class="page" id="top">
+
+    <section class="hero">
+      <span class="badge">SERVER UPDATES</span>
+      <h1 class="title">Changelogs</h1>
+      <p class="tagline">Everything new, changed and fixed in Stories of Los Santos.</p>
+    </section>
+
+    <div class="lights" aria-hidden="true"></div>
+
+    <section class="card filters-card" id="updates">
+      <div class="filters">
+        <div class="chips" id="chips">
+          <button type="button" class="chip active" data-f="all">All</button>
+          <button type="button" class="chip added" data-f="added">Added</button>
+          <button type="button" class="chip changed" data-f="changed">Changed</button>
+          <button type="button" class="chip fixed" data-f="fixed">Fixed</button>
+          <button type="button" class="chip removed" data-f="removed">Removed</button>
+        </div>
+        <input class="search" id="search" type="search" placeholder="Search updates…" aria-label="Search updates">
+      </div>
+    </section>
+
+    <div class="timeline" id="list"></div>
+    <p class="empty" id="empty" hidden>No updates match that search.</p>
+
+  </main>
+
+  <footer class="footer">
+    <img src="logo.png" alt="">
+    <p>Stories of Los Santos · Changelogs</p>
+  </footer>
+
+  <script src="changelogs.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
